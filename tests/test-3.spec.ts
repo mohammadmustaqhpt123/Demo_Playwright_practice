@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 for(let i=0; i<100; i++){
 test(`test ${i}`, async ({ page }) => {
+  console.log('test' + i);
   await page.goto('https://demoqa.com/');
   await page.locator('.card-up').first().click();
   await page.getByText('Text Box').click();

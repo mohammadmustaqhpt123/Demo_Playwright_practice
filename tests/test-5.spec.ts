@@ -6,6 +6,7 @@ for(let i=0; i<100; i++){
 
 test(`test automation${i}`, async ({ page }) => {
   unique++
+  console.log(`test automation${i}`)
   await page.goto('https://automationexercise.com/');
   await page.getByRole('link', { name: ' Signup / Login' }).click();
   await page.getByPlaceholder('Name').click();

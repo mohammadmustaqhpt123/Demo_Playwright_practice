@@ -1,11 +1,11 @@
 import { test, expect } from '@playwright/test';
 
-let unique= 5;
+let unique= 110;
 
-for(let i=0; i<100; i++){
+for(let i=0; i<1000; i++){
 
 test(`test automation${i}`, async ({ page }) => {
-  unique++
+  unique+=i
   console.log(`test automation${i}`)
   await page.goto('https://automationexercise.com/');
   await page.getByRole('link', { name: ' Signup / Login' }).click();

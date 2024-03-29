@@ -7,7 +7,7 @@ on:
 jobs:
   playwright-tests:
     timeout-minutes: 90
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:

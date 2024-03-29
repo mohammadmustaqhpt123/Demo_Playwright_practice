@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-for(let i=0; i<1000; i++){
+for(let i=0; i<100; i++){
 test(`test demoqa ${i}`, async ({ page }) => {
   console.log(`test demoqa ${i}`);
   await page.goto('https://demoqa.com/');

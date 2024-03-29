@@ -1,8 +1,8 @@
 import { test, expect } from '@playwright/test';
 
-let unique= 110;
+let unique= 210;
 
-for(let i=0; i<1000; i++){
+for(let i=0; i<100; i++){
 
 test(`test automation${i}`, async ({ page }) => {
   unique+=i

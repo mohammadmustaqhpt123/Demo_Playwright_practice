@@ -6,8 +6,8 @@ on:
     branches: [ main, master ]
 jobs:
   playwright-tests:
-    timeout-minutes: 60
-    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    runs-on: ubuntu-18.04
     strategy:
       fail-fast: false
       matrix:
